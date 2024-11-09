@@ -1,0 +1,406 @@
+/* ======= Navbar Section======= */
+  .navbar-custom {
+      background-color: rgba(255, 255, 255, 0);
+      transition: background-color 0.7s ease-in-out;
+  }
+
+  .navbar-scrolled {
+      background-color: rgba(0, 0, 0, 0.9);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.79);
+  }
+
+  .navbar-custom .nav-link{
+      color: #d3cdcd;
+      padding: 10px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+  }
+  .navbar-custom .navbar-brand{
+    font-size: 1.6rem;
+    margin-left: 20px;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.collapse {
+    margin-right: 40px;
+}
+
+  .navbar-scrolled .navbar-brand,
+  .navbar-scrolled .nav-link {
+      color: #d8d3d3;
+  }
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28 255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Add a pseudo-element for the underline */
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect to show underline */
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Underline for active link */
+
+/* ======= HERO Section======= */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./imges/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    
+}
+
+/* ======= SERVICES Section======= */
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+    border: 5px solid #0461ec;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.service-card .icon {
+    font-size: 24px;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.service-card p {
+    color: #777;
+    font-size: 1rem;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card:hover .icon-container {
+    background-color: #007bff;
+    border: 5px solid #CDE1F8;
+}
+.service-card:hover .icon{
+    color: #ffffff;
+}
+.line{
+    width: 40px;
+        height: 5px;
+        background-color: #0078ff;
+        margin: 0 auto;
+    }
+
+/* ======= COUNTER Section======= */
+.counter-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 255, 0.5)), url('./imges/counters-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+}
+
+.counter-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.counter {
+    transition: transform 0.3s ease-in-out;
+}
+.counter h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.counter p {
+    font-size: 1.2rem;
+}
+.counter .icon {
+    font-size: 40px;
+    color: #fff;
+}
+
+.count {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.counter p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.counter:hover .icon {
+    color: lightblue;
+    /* Add hover effect on icon */
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Start from below */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at normal position */
+    }
+}
+
+/* Individual animation delays for each counter */
+.counter:nth-child(1) h2 {
+    animation-delay: 0.2s;
+    /* Delay for the first counter */
+}
+
+.counter:nth-child(2) h2 {
+    animation-delay: 0.4s;
+    /* Delay for the second counter */
+}
+
+.counter:nth-child(3) h2 {
+    animation-delay: 0.6s;
+    /* Delay for the third counter */
+}
+
+.counter:nth-child(4) h2 {
+    animation-delay: 0.8s;
+    /* Delay for the fourth counter */
+}
+
+/* ======= portfolio Section======= */
+
+.work-box {
+    position: relative;
+    margin-bottom: 30px;
+    background-color: #fff;
+        border: 1px solid #ddd;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        overflow: hidden;
+}
+
+.work-img:hover {
+    transform: scale(1.2);
+}
+.work-img{
+    transition: 0.5s ease-in-out;
+    
+}
+.work-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+.work-content {
+    padding: 2rem;
+}
+
+.w-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.w-more {
+    font-size: 14px;
+    color: #777;
+}
+
+.w-like i {
+    font-size: 40px;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.w-like i:hover {
+    color: #0056b3;
+}
+
+/* ======= feedback Section======= */
+.feedback-slider {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 255, 0.5)), url('./imges/overlay-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 60px 0;
+    position: relative;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #e3dddd;
+    margin-bottom: 40px;
+}
+
+.feedback-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feedback-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #d1c3c3;
+}
+
+.carousel-indicators {
+    position: absolute;
+
+}
+
+.blog-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+/* ======= BLOG Section======= */
+.blog-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog-img img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.blog-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: #777;
+}
+
+.blog-author,
+.blog-time {
+    margin-right: 40px;
+    
+}
+
+.blog-author i,
+.blog-time i {
+    margin-right: 5px;
+    color: #007bff;
+}
+.blog-img {
+    position: relative;
+}
+
+.card-category {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: #0078ff;
+    border-radius: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* ========contact Section======= */
+.rounded-btn {
+     border-radius: 50px;
+     width: 100%;
+ }
+
+.contact-icons i {
+     font-size: 1.2rem;
+     margin-right: 10px;
+ }
+
+.social-icons a {
+     margin-right: 10px;
+ }
+
+.contact{
+        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 255, 0.5)), url('./imges/overlay-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 60px 0;
+        position: relative;
+}
+.line-contact{
+        width: 80px;
+            height: 5px;
+            background-color: #0078ff;
+            margin-top: 5px;
+}
